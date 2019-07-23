@@ -9,7 +9,7 @@ import { IAppState } from './store/state/app.state';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  title = 'angular-ngrx';
+  // title = 'angular-ngrx';
   constructor(private _store: Store<IAppState>) {}
 
   ngOnInit() {
