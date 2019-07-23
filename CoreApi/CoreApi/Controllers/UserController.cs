@@ -26,7 +26,12 @@ namespace CoreApi.Controllers
             UserService userService = new UserService();
             var lstUser = userService.GetAllUsers();
 
-            return Ok(lstUser);
+            var result = new
+            {
+                users = lstUser
+            };
+
+            return Ok(result);
         }
     }
 }

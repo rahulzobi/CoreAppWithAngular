@@ -9732,11 +9732,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\ZOBI\\PROJECTS\\Test\\CoreApi\\CoreApiUnitTest\\CoreApiUnitTest.csproj",
+      "projectUniqueName": "D:\\ZOBI\\PROJECTS\\AngularCoreDemo\\CoreApi\\CoreApiUnitTest\\CoreApiUnitTest.csproj",
       "projectName": "CoreApiUnitTest",
-      "projectPath": "D:\\ZOBI\\PROJECTS\\Test\\CoreApi\\CoreApiUnitTest\\CoreApiUnitTest.csproj",
+      "projectPath": "D:\\ZOBI\\PROJECTS\\AngularCoreDemo\\CoreApi\\CoreApiUnitTest\\CoreApiUnitTest.csproj",
       "packagesPath": "C:\\Users\\RahulRaval\\.nuget\\packages\\",
-      "outputPath": "D:\\ZOBI\\PROJECTS\\Test\\CoreApi\\CoreApiUnitTest\\obj\\",
+      "outputPath": "D:\\ZOBI\\PROJECTS\\AngularCoreDemo\\CoreApi\\CoreApiUnitTest\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -9755,8 +9755,8 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "D:\\ZOBI\\PROJECTS\\Test\\CoreApi\\CoreApi\\CoreApi.csproj": {
-              "projectPath": "D:\\ZOBI\\PROJECTS\\Test\\CoreApi\\CoreApi\\CoreApi.csproj"
+            "D:\\ZOBI\\PROJECTS\\AngularCoreDemo\\CoreApi\\CoreApi\\CoreApi.csproj": {
+              "projectPath": "D:\\ZOBI\\PROJECTS\\AngularCoreDemo\\CoreApi\\CoreApi\\CoreApi.csproj"
             }
           }
         }

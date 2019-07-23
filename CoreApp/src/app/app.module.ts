@@ -1,28 +1,40 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule, ReactiveFormsModule  } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { StoreModule } from '@ngrx/store';
+import { BrowserModule } from '@angular/platform-browser';
+import { StoreDevtoolsModule } from '@ngrx/store-devtools';
+import { EffectsModule } from '@ngrx/effects';
+import { StoreRouterConnectingModule } from '@ngrx/router-store';
 
+import { appReducers } from './store/reducers/app.reducers';
+import { environment } from '../environments/environment';
 import { AppRoutingModule } from './app-routing.module';
+import { UserEffects } from './store/effects/user.effects';
 import { AppComponent } from './app.component';
-import { UserComponent } from './components/user/user.component';
 import { UserService } from './services/user.service';
-import { CommonModule } from '@angular/common';
+import { UsersComponent as UsersContainerComponent } from './containers/users/users.component';
+import { UsersComponent } from './components/users/users.component';
+import { UserComponent } from './containers/user/user.component';
+import { UserDetailsComponent } from './components/user-details/user-details.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    UserComponent
+    UsersContainerComponent,
+    UsersComponent,
+    UserComponent,
+    UserDetailsComponent
   ],
   imports: [
     BrowserModule,
-    CommonModule,
     HttpClientModule,
-    FormsModule,
-    ReactiveFormsModule,
+    StoreModule.forRoot(appReducers),
+    EffectsModule.forRoot([UserEffects]),
+    StoreRouterConnectingModule.forRoot({ stateKey: 'router' }),
+    !environment.production ? StoreDevtoolsModule.instrument() : [],
     AppRoutingModule
   ],
   providers: [UserService],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

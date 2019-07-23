@@ -13038,11 +13038,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\ZOBI\\PROJECTS\\Test\\CoreApi\\CoreApi\\CoreApi.csproj",
+      "projectUniqueName": "D:\\ZOBI\\PROJECTS\\AngularCoreDemo\\CoreApi\\CoreApi\\CoreApi.csproj",
       "projectName": "CoreApi",
-      "projectPath": "D:\\ZOBI\\PROJECTS\\Test\\CoreApi\\CoreApi\\CoreApi.csproj",
+      "projectPath": "D:\\ZOBI\\PROJECTS\\AngularCoreDemo\\CoreApi\\CoreApi\\CoreApi.csproj",
       "packagesPath": "C:\\Users\\RahulRaval\\.nuget\\packages\\",
-      "outputPath": "D:\\ZOBI\\PROJECTS\\Test\\CoreApi\\CoreApi\\obj\\",
+      "outputPath": "D:\\ZOBI\\PROJECTS\\AngularCoreDemo\\CoreApi\\CoreApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
